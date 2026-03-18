@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Complete Digital Marketing Bundle — $47</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:      #F8F4EF;
+      --warm:       #EDE6DC;
+      --mid:        #D4C4B0;
+      --brown:      #8B6F47;
+      --brown-deep: #6B5035;
+      --dark:       #1E1510;
+      --text:       #3D2F20;
+      --muted:      #9C8872;
+      --white:      #FFFFFF;
+      --gold:       #C9973A;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── GRAIN OVERLAY ── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    /* ── FLOATING BLOBS ── */
+    .blob { position: fixed; border-radius: 50%; filter: blur(100px); opacity: 0.3; pointer-events: none; z-index: 0; }
+    .blob-1 { width: 600px; height: 600px; background: radial-gradient(#D4B896, transparent); top: -200px; right: -150px; }
+    .blob-2 { width: 500px; height: 500px; background: radial-gradient(#C9B08A, transparent); bottom: 200px; left: -150px; }
+    .blob-3 { width: 300px; height: 300px; background: radial-gradient(#E8D5BC, transparent); top: 50%; left: 50%; transform: translate(-50%,-50%); }
+
+    /* ── LAYOUT ── */
+    .page { position: relative; z-index: 1; }
+
+    section { padding: 80px 24px; }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ────────────────────────────
+       HERO
+    ──────────────────────────── */
+    .hero {
+      padding: 100px 24px 80px;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--brown);
+      color: var(--white);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      padding: 7px 18px;
+      border-radius: 100px;
+      margin-bottom: 32px;
+      animation: fadeUp 0.7s ease both;
+    }
+
+    .hero-eyebrow span { opacity: 0.7; }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(44px, 9vw, 82px);
+      font-weight: 300;
+      line-height: 1.0;
+      color: var(--dark);
+      margin-bottom: 12px;
+      animation: fadeUp 0.7s ease 0.1s both;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--brown);
+      display: block;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(15px, 2.5vw, 18px);
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 500px;
+      margin: 24px auto 0;
+      animation: fadeUp 0.7s ease 0.2s both;
+    }
+
+    .hero-divider {
+      width: 1px;
+      height: 60px;
+      background: linear-gradient(to bottom, transparent, var(--mid), transparent);
+      margin: 40px auto;
+      animation: fadeUp 0.7s ease 0.3s both;
+    }
+
+    /* ── FOR WHO ── */
+    .for-who {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 48px;
+      animation: fadeUp 0.7s ease 0.35s both;
+    }
+
+    .for-chip {
+      background: var(--white);
+      border: 1px solid var(--warm);
+      border-radius: 100px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text);
+      box-shadow: 0 2px 8px rgba(139,111,71,0.06);
+    }
+
+    .for-chip strong { color: var(--brown); font-weight: 600; }
+
+    /* ── HERO CTA ── */
+    .hero-cta-wrap {
+      animation: fadeUp 0.7s ease 0.4s both;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--brown);
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 18px 48px;
+      border-radius: 100px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 32px rgba(139,111,71,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    .btn-primary:hover {
+      background: var(--brown-deep);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(139,111,71,0.4);
+    }
+
+    .btn-primary:hover::before { opacity: 1; }
+
+    .price-display {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .price-display strong {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--brown);
+      margin-right: 6px;
+    }
+
+    .price-display s {
+      color: var(--mid);
+      font-size: 14px;
+    }
+
+    /* ────────────────────────────
+       PAIN SECTION
+    ──────────────────────────── */
+    .pain-section {
+      background: var(--dark);
+      padding: 80px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pain-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--brown), transparent);
+    }
+
+    .pain-section::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--brown), transparent);
+    }
+
+    .pain-intro {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 5vw, 40px);
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1.4;
+      text-align: center;
+      margin-bottom: 48px;
+      opacity: 0.95;
+    }
+
+    .pain-intro em { font-style: italic; color: var(--gold); }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .pain-item {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 24px 28px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .pain-icon {
+      font-size: 22px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .pain-text {
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+    }
+
+    .pain-text strong {
+      display: block;
+      color: var(--white);
+      font-weight: 500;
+      margin-bottom: 4px;
+      font-size: 15px;
+    }
+
+    .pain-cta {
+      text-align: center;
+      margin-top: 48px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(22px, 4vw, 32px);
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    /* ────────────────────────────
+       WHAT'S INSIDE
+    ──────────────────────────── */
+    .inside-section { background: var(--white); }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--brown);
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(32px, 6vw, 52px);
+      font-weight: 300;
+      color: var(--dark);
+      line-height: 1.1;
+    }
+
+    .section-title em { font-style: italic; color: var(--brown); }
+
+    .section-body {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-top: 16px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Product cards */
+    .products-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .product-card {
+      background: var(--cream);
+      border: 1px solid var(--warm);
+      border-radius: 20px;
+      padding: 28px 32px;
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 24px;
+      align-items: start;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: var(--brown);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    .product-card:hover {
+      border-color: var(--mid);
+      box-shadow: 0 8px 32px rgba(139,111,71,0.1);
+      transform: translateX(4px);
+    }
+
+    .product-card:hover::before { opacity: 1; }
+
+    .product-emoji {
+      width: 64px;
+      height: 64px;
+      background: var(--warm);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+
+    .product-content {}
+
+    .product-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--brown);
+      margin-bottom: 6px;
+    }
+
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .product-desc {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    .product-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .product-bullets li {
+      font-size: 12px;
+      color: var(--text);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .product-bullets li::before {
+      content: '✓';
+      color: var(--brown);
+      font-weight: 700;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+
+    /* ────────────────────────────
+       TRANSFORMATION
+    ──────────────────────────── */
+    .transform-section {
+      background: linear-gradient(135deg, #2A1F14, #1E1510);
+      padding: 80px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .transform-section::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 300px;
+      color: rgba(139,111,71,0.08);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .transform-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: 560px) {
+      .transform-grid { grid-template-columns: 1fr; }
+    }
+
+    .transform-col {
+      padding: 36px 32px;
+    }
+
+    .transform-col.before { background: rgba(255,255,255,0.03); }
+    .transform-col.after  { background: rgba(139,111,71,0.12); }
+
+    .transform-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .before .transform-label { color: rgba(255,255,255,0.4); }
+    .after  .transform-label { color: var(--gold); }
+
+    .transform-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .transform-items li {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.6;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .before .transform-items li { color: rgba(255,255,255,0.5); }
+    .after  .transform-items li { color: rgba(255,255,255,0.9); }
+
+    .before .transform-items li::before { content: '✗'; color: rgba(255,255,255,0.25); flex-shrink: 0; }
+    .after  .transform-items li::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+
+    /* ────────────────────────────
+       VALUE STACK
+    ──────────────────────────── */
+    .value-section { background: var(--white); }
+
+    .value-stack {
+      background: var(--cream);
+      border: 1px solid var(--warm);
+      border-radius: 24px;
+      padding: 40px;
+      margin-bottom: 32px;
+    }
+
+    .value-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--warm);
+    }
+
+    .value-row:last-child { border-bottom: none; }
+
+    .value-name {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .value-name span { font-size: 18px; }
+
+    .value-price {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .value-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0 0;
+      margin-top: 8px;
+    }
+
+    .value-total-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-style: italic;
+      color: var(--dark);
+    }
+
+    .value-total-price {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: right;
+    }
+
+    .value-total-price strong {
+      display: block;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--brown);
+      line-height: 1;
+    }
+
+    .value-total-price s {
+      font-size: 16px;
+      color: var(--mid);
+    }
+
+    /* ── FINAL CTA BOX ── */
+    .cta-box {
+      background: var(--brown);
+      border-radius: 24px;
+      padding: 48px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle at 60% 40%, rgba(255,255,255,0.08), transparent 60%);
+      pointer-events: none;
+    }
+
+    .cta-box-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .cta-box-title em { font-style: italic; color: rgba(255,255,255,0.7); }
+
+    .cta-box-sub {
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      max-width: 420px;
+      margin: 0 auto 32px;
+    }
+
+    .btn-white {
+      display: inline-block;
+      background: var(--white);
+      color: var(--brown);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 18px 52px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    }
+
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+
+    .cta-reassurance {
+      margin-top: 20px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-reassurance span::before { content: '🔒 '; }
+
+    /* ────────────────────────────
+       FAQ
+    ──────────────────────────── */
+    .faq-section { background: var(--cream); }
+
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--warm);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .faq-q {
+      padding: 20px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      user-select: none;
+      list-style: none;
+    }
+
+    .faq-q::after {
+      content: '+';
+      font-size: 20px;
+      color: var(--brown);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    details[open] .faq-q::after { transform: rotate(45deg); }
+
+    .faq-a {
+      padding: 0 24px 20px;
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.8;
+      border-top: 1px solid var(--warm);
+      padding-top: 16px;
+    }
+
+    /* ────────────────────────────
+       FOOTER
+    ──────────────────────────── */
+    footer {
+      background: var(--dark);
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-style: italic;
+      color: var(--white);
+      opacity: 0.8;
+      margin-bottom: 12px;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+      line-height: 1.7;
+    }
+
+    footer a { color: rgba(255,255,255,0.5); text-decoration: underline; }
+
+    /* ── STICKY CTA BAR ── */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(30, 21, 16, 0.95);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(139,111,71,0.3);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      z-index: 99;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+
+    .sticky-bar.visible { transform: translateY(0); }
+
+    .sticky-info {
+      font-size: 13px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .sticky-info strong {
+      display: block;
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .sticky-btn {
+      background: var(--brown);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 100px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+
+    .sticky-btn:hover { background: var(--brown-deep); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      section { padding: 60px 20px; }
+      .hero { padding: 72px 20px 60px; }
+      .product-card { grid-template-columns: 1fr; }
+      .product-emoji { width: 48px; height: 48px; font-size: 22px; border-radius: 12px; }
+      .value-stack { padding: 28px 24px; }
+      .cta-box { padding: 36px 24px; }
+      .sticky-info { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<div class="page">
+
+  <!-- ══════════════════════════
+       HERO
+  ══════════════════════════ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-eyebrow">✦ <span>Digital Product Bundle</span> ✦</div>
+
+      <h1 class="hero-title">
+        Everything you need<br>to start building
+        <em>your digital income.</em>
+      </h1>
+
+      <p class="hero-subtitle">
+        Five beginner-friendly resources — marketing strategy, mindset, content & AI tools — all in one place. Built for busy 9-to-5 women who are ready to build something of their own.
+      </p>
+
+      <div class="hero-divider"></div>
+
+      <div class="for-who">
+        <div class="for-chip">✦ <strong>No experience needed</strong></div>
+        <div class="for-chip">✦ <strong>No big audience required</strong></div>
+        <div class="for-chip">✦ Works around your <strong>9-to-5</strong></div>
+        <div class="for-chip">✦ <strong>Faceless</strong> friendly</div>
+      </div>
+
+      <div class="hero-cta-wrap">
+        <a href="#get-bundle" class="btn-primary">Yes, I want the bundle →</a>
+        <div class="price-display">
+          <strong>$47</strong> one-time · instant access · <s>$135 value</s>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+       PAIN
+  ══════════════════════════ -->
+  <section class="pain-section">
+    <div class="container">
+      <p class="pain-intro reveal">
+        You're working full time, running on empty,<br>
+        and <em>still</em> trying to build something better.
+      </p>
+
+      <div class="pain-grid reveal">
+        <div class="pain-item">
+          <div class="pain-icon">😔</div>
+          <div class="pain-text">
+            <strong>Overwhelmed by where to start</strong>
+            You've watched the videos and read the posts — but nothing has clicked into a clear path forward yet.
+          </div>
+        </div>
+        <div class="pain-item">
+          <div class="pain-icon">⏰</div>
+          <div class="pain-text">
+            <strong>No time to figure it out alone</strong>
+            Between your job, your life, and your responsibilities — you need a shortcut, not another rabbit hole.
+          </div>
+        </div>
+        <div class="pain-item">
+          <div class="pain-icon">🌀</div>
+          <div class="pain-text">
+            <strong>Stress is blocking your progress</strong>
+            It's hard to think about building when your nervous system is already stretched thin.
+          </div>
+        </div>
+        <div class="pain-item">
+          <div class="pain-icon">📲</div>
+          <div class="pain-text">
+            <strong>Stuck on content & visibility</strong>
+            You don't know what to post, how to grow, or how to sell — without showing your face or going viral.
+          </div>
+        </div>
+      </div>
+
+      <p class="pain-cta reveal">This bundle was built for exactly where you are right now.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+       WHAT'S INSIDE
+  ══════════════════════════ -->
+  <section class="inside-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">What's inside</div>
+        <h2 class="section-title">Five resources.<br><em>One complete system.</em></h2>
+        <p class="section-body">Everything is beginner-friendly, actionable, and designed to work around your schedule — not replace it.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <div class="product-card reveal">
+          <div class="product-emoji">🧠</div>
+          <div class="product-content">
+            <div class="product-label">Mindset & Wellbeing</div>
+            <div class="product-name">Resilience Revolution</div>
+            <div class="product-desc">The mindset guide for busy professionals — because your mental state is the foundation everything else is built on.</div>
+            <ul class="product-bullets">
+              <li>Stress management techniques that actually fit real life</li>
+              <li>Productivity habits for low-energy days</li>
+              <li>Nervous system resets between your job and your side hustle</li>
+              <li>Mindset shifts to keep going when it feels slow</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-emoji">🚀</div>
+          <div class="product-content">
+            <div class="product-label">Business Foundation</div>
+            <div class="product-name">Faceless Digital Marketing Starter Kit</div>
+            <div class="product-desc">Your complete launchpad for building a profitable digital brand — no face, no followers, no problem.</div>
+            <ul class="product-bullets">
+              <li>How to choose your niche and digital product idea</li>
+              <li>Setting up your faceless brand from scratch</li>
+              <li>Your first product creation walkthrough</li>
+              <li>Platform setup & where to sell</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-emoji">📱</div>
+          <div class="product-content">
+            <div class="product-label">Instagram Growth</div>
+            <div class="product-name">Instagram Mastery Guide</div>
+            <div class="product-desc">Grow, engage and convert — the complete Instagram playbook for digital product sellers.</div>
+            <ul class="product-bullets">
+              <li>Bio optimisation & profile setup that attracts buyers</li>
+              <li>Content strategy for Reels, carousels & Stories</li>
+              <li>How to use ManyChat DM automation to grow your list</li>
+              <li>Turning followers into paying customers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-emoji">🗓️</div>
+          <div class="product-content">
+            <div class="product-label">Done-For-You Content</div>
+            <div class="product-name">30-Day Content Calendar</div>
+            <div class="product-desc">A complete month of content — planned, structured and ready for you to batch and schedule.</div>
+            <ul class="product-bullets">
+              <li>30 daily post ideas with themes and formats</li>
+              <li>Hooks, caption starters and cover text included</li>
+              <li>Balanced mix of value, promotion and storytelling</li>
+              <li>Designed for the faceless creator format</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-emoji">🤖</div>
+          <div class="product-content">
+            <div class="product-label">AI Tools</div>
+            <div class="product-name">AI Content Creation Playbook</div>
+            <div class="product-desc">Use AI to create weeks of content in a few hours — even on your busiest weeks.</div>
+            <ul class="product-bullets">
+              <li>The exact AI prompts to write captions, hooks and scripts</li>
+              <li>How to use AI to repurpose one idea into 10 pieces of content</li>
+              <li>AI tools that work for faceless creators</li>
+              <li>Build a content system that runs with minimal effort</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+       TRANSFORMATION
+  ══════════════════════════ -->
+  <section class="transform-section">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:40px;">
+        <div class="section-tag" style="color:var(--gold)">The shift</div>
+        <h2 class="section-title" style="color:var(--white)">Before <em style="color:var(--gold)">& after</em></h2>
+      </div>
+
+      <div class="transform-grid reveal">
+        <div class="transform-col before">
+          <div class="transform-label">✗ &nbsp; Before</div>
+          <ul class="transform-items">
+            <li>Overwhelmed, no clear starting point</li>
+            <li>Scrolling for inspo but not taking action</li>
+            <li>Stress and burnout blocking every idea</li>
+            <li>No content plan, no consistency</li>
+            <li>Spending hours writing captions from scratch</li>
+            <li>No system, no strategy, no sales</li>
+          </ul>
+        </div>
+        <div class="transform-col after">
+          <div class="transform-label">✓ &nbsp; After</div>
+          <ul class="transform-items">
+            <li>Clear roadmap from zero to first sale</li>
+            <li>A complete content system ready to go</li>
+            <li>Mindset tools to stay calm and consistent</li>
+            <li>30 days of content planned and batched</li>
+            <li>AI doing the heavy lifting on content creation</li>
+            <li>A real digital income — built around your life</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+       VALUE STACK + CTA
+  ══════════════════════════ -->
+  <section class="value-section" id="get-bundle">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">The investment</div>
+        <h2 class="section-title">Everything for<br><em>one simple price.</em></h2>
+      </div>
+
+      <div class="value-stack reveal">
+        <div class="value-row">
+          <div class="value-name"><span>🧠</span> Resilience Revolution</div>
+          <div class="value-price">$27</div>
+        </div>
+        <div class="value-row">
+          <div class="value-name"><span>🚀</span> Faceless Digital Marketing Starter Kit</div>
+          <div class="value-price">$27</div>
+        </div>
+        <div class="value-row">
+          <div class="value-name"><span>📱</span> Instagram Mastery Guide</div>
+          <div class="value-price">$27</div>
+        </div>
+        <div class="value-row">
+          <div class="value-name"><span>🗓️</span> 30-Day Content Calendar</div>
+          <div class="value-price">$27</div>
+        </div>
+        <div class="value-row">
+          <div class="value-name"><span>🤖</span> AI Content Creation Playbook</div>
+          <div class="value-price">$27</div>
+        </div>
+        <div class="value-total">
+          <div class="value-total-label">Your total today</div>
+          <div class="value-total-price">
+            <strong>$47</strong>
+            <s>$135 value</s>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-box reveal">
+        <h2 class="cta-box-title">Ready to start building<br><em>something of your own?</em></h2>
+        <p class="cta-box-sub">Five resources. One decision. The version of you that's been waiting to start — she's ready.</p>
+        <a href="#" class="btn-white">Get instant access — $47 →</a>
+        <!-- ✏️ Replace # above with your Beacons payment link -->
+        <div class="cta-reassurance">
+          <span>Instant digital download</span>
+          <span>One-time payment</span>
+          <span>No subscriptions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+       FAQ
+  ══════════════════════════ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title"><em>Questions?</em><br>Answered.</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary class="faq-q">Do I need experience to use this bundle?</summary>
+          <div class="faq-a">Not at all. Every resource is designed with complete beginners in mind. Whether you've never posted on Instagram or haven't made a single sale yet, this bundle will meet you exactly where you are.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">How is this delivered?</summary>
+          <div class="faq-a">Instantly. As soon as your payment is confirmed you'll get access to all five digital downloads. No waiting, no shipping — everything is yours to access immediately.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">Do I need to show my face?</summary>
+          <div class="faq-a">Absolutely not. The entire bundle is built around the faceless content creator model. You can build a profitable digital brand without ever appearing on camera.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">I work full time — will I actually have time for this?</summary>
+          <div class="faq-a">Yes — this was built specifically for people in your situation. The strategies, content calendar and AI tools are all designed to help you build in small pockets of time, not require a full schedule overhaul.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">What if I have questions after purchasing?</summary>
+          <div class="faq-a">You can reach out directly via Instagram DM or email at any time. The community around this brand is small and personal — you won't be left on your own.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════
+       FOOTER
+  ══════════════════════════ -->
+  <footer>
+    <div class="footer-brand">Your Brand Name</div>
+    <p>© 2026 · All rights reserved · <a href="/cdn-cgi/l/email-protection#f79f929b9b98b78e988285929a969e9bd994989a"><span class="__cf_email__" data-cfemail="9cf4f9f0f0f3dce5f3e9eef9f1fdf5f0b2fff3f1">[email&#160;protected]</span></a></p>
+    <p style="margin-top:8px;">Questions? DM on <a href="#">Instagram</a></p>
+  </footer>
+
+</div><!-- end .page -->
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-info">
+    <strong>Complete Digital Marketing Bundle</strong>
+    5 resources · instant access
+  </div>
+  <a href="#get-bundle" class="sticky-btn">Get it for $47 →</a>
+</div>
+
+<script>
+  const bar = document.getElementById('stickyBar');
+  window.addEventListener('scroll', () => {
+    bar.classList.toggle('visible', window.scrollY > 500);
+  });
+</script>
+
+</body>
+</html>
